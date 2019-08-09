@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Victor Nguyen"
-  avatar           : "/images/Headshot.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Headshot.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Project Portfolio."
   location         : "Minneapolis, MN"
   email            :
