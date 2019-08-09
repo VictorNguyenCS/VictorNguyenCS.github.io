@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Nicklas Rouvinen"
+title                    : "Victor Nguyen"
 title_separator          : "-"
-name                     : "Nicklas Rouvinen"
+name                     : "Victor Nguyen"
 description              : "Project Portfolio."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -100,7 +100,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Nicklas Rouvinen"
+  name             : "Victor Nguyen"
   avatar           : "/images/Headshot.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Project Portfolio."
   location         : "Minneapolis, MN"
@@ -108,7 +108,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: VictorNguyenCS@gmail.com
+      # url: VictorNguyenCS@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -120,7 +120,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/VictorNguyenCS"
+      url: "https://github.com/VictorNguyenCS/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/VictorNguyenCS/"
@@ -139,7 +139,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/NickRou"
+      url: "https://github.com/VictorNguyenCS/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
