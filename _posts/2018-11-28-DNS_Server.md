@@ -10,4 +10,4 @@ both recursive and iterative queries. Recursive queries ask for the DNS server t
 In the process, the queried DNS server may also query other DNS servers to get the final result. On the other hand, iterative queries means the DNS server will only resolve part of your request and refer you to other DNS servers for your final result.
 
 
-<img src="images\DNS_Server\Model.png" alt="Model">
+<img src="{{site.baseurl}}\images\DNS_Server\Model.png">
