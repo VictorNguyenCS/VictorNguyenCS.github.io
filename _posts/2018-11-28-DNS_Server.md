@@ -5,14 +5,14 @@ tags: [Socket Programming]
 exceprt: "DNS Server implemented in Python, using socket programming concepts."
 ---
 
-I created a DNS Server that utilizes Transmission control protocol (TCP) to provide connection from the DNS Servers to Client Servers. Implementation of the DNS Servers include
+Created a DNS Server that utilizes Transmission control protocol (TCP) to provide connection from the DNS Servers to Client Servers. Implementation of the DNS Servers include
 both recursive and iterative queries. Recursive queries ask for the DNS server to do all the job fetching the final IP address for your request and return it directly to you.
 In the process, the queried DNS server may also query other DNS servers to get the final result. On the other hand, iterative queries means the DNS server will only resolve part of your request and refer you to other DNS servers for your final result. All queries will be logged.
 
 
 <img src="{{site.baseurl}}\images\DNS_Server\Model.png">
 
-Client Server Code:
+<h2>Client Server Code:</h2>
 
 ```python 
 import socket
@@ -203,7 +203,7 @@ ServerPort = 5352
 main(ServerID, ServerPort)
 ```
 
-Root DNS Server Code:
+<h2>Root DNS Server Code:</h2>
 ```python
 import socket
 import thread
@@ -309,7 +309,7 @@ ServerPort = 5353
 main(ServerID, ServerPort)
 ```
 
-Com Server Code:
+<h2>Com Server Code:</h2>
 ```python
 import socket
 import thread
@@ -366,7 +366,7 @@ ServerPort = 5678
 main(ServerID, ServerPort)
 ```
 
-Gov Server Code:
+<h2>Gov Server Code:</h2>
 ```python
 import socket
 import thread
@@ -423,7 +423,7 @@ ServerPort = 5680
 main(ServerID, ServerPort)
 ```
 
-Org Server Code:
+<h2>Org Server Code:</h2>
 ```python
 import socket
 import thread
