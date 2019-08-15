@@ -22,7 +22,7 @@ are connected to the chat. The users will print out the message. admin: <any-oth
 
 
 The Server Code:
-```C++
+```c++
 #include <stdio.h> 
 #include <fcntl.h>
 #include <errno.h>
