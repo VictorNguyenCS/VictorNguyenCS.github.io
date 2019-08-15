@@ -11,17 +11,17 @@ This project focuses on three OS system concepts. First, the use of processes to
 
 <img src="{{site.baseurl}}\images\Multi-Process_Chat_App\Model.png">
 
-The Server Process:
-"The SERVER process is the main parent process, which will run when the chat server program is started. It is responsible for forking child processes for each user. The SERVER process provides an interface for following administrative
+<h2>The Server Process:</h2>
+The SERVER process is the main parent process, which will run when the chat server program is started. It is responsible for forking child processes for each user. The SERVER process provides an interface for following administrative
 functions listed below.
-1. \list : List all of the users currently connected to the server. Print ’<no users>’ if there are no users currently.
-2. \kick <username> : Kick the specified user off the chat session.
+1. \list : List all of the users currently connected to the server. Print ’`<no users>`’ if there are no users currently.
+2. \kick `<username>` : Kick the specified user off the chat session.
 3. \exit : Terminate all user sessions and close the chat server as well.
-4. <any-other-text> : Broadcast this text to all of the user processes with prefix, “admin:”. Do nothing, if no users
-are connected to the chat. The users will print out the message. admin: <any-other-text>"
+4. `<any-other-text>` : Broadcast this text to all of the user processes with prefix, “admin:”. Do nothing, if no users
+are connected to the chat. The users will print out the message. admin: `<any-other-text>`
 
 
-The Server Code:
+<h2>The Server Code:</h2>
 ```c++
 #include <stdio.h> 
 #include <fcntl.h>
@@ -291,18 +291,18 @@ int main(int argc, char * argv[])
 ```
 
 
-The User Process:
-"The user process is another program that you will write to provide an interface to the server in the chat. When a user
+<h2>The User Process:</h2>
+The user process is another program that you will write to provide an interface to the server in the chat. When a user
 starts a USER process, this will connect to the SERVER and interact with SERVER given a pipe. The USER process must display
 the name of the user as part of the prompt. The USER process will have some commands of its own. All the user
 commands are listed below.
 1. \list : Same as in the SERVER process. Output should be printed in the user’s process terminal window.
 2. \exit : Disconnect this user. Terminate the USER process and remove them from the chat session.
-3. \p2p <username><message> : Send a personal message (<message>) to the user specified in <username>.
+3. \p2p `<username>``<message>` : Send a personal message (`<message>`) to the user specified in `<username>`.
 Print error if the user is invalid.
-4. <any-other-text> : Same as in the SERVER process but without a prefix. Broadcast this text to all user processes."
+4. `<any-other-text>` : Same as in the SERVER process but without a prefix. Broadcast this text to all user processes.
 
-The User Code:
+<h2>The User Code:</h2>
 ```c++
 #include <stdio.h>
 #include <unistd.h>
