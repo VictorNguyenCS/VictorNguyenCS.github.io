@@ -18,4 +18,4 @@ this was associated with our fitness function. we believe modifying the fitness 
 a benefit to individuals who manage to overcome difficult obstacles would be an effective way to
 solve this issue.
 
-Read the full paper [here]({{site.baseurl}}\resources\CSCI_4511W_Final_Paper.pdf)
+Read the full paper [here]({{site.baseurl}}\resources\Neuro_Genetic_Evolution_Research_Paper.pdf)
