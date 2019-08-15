@@ -22,7 +22,7 @@ are connected to the chat. The users will print out the message. admin: <any-oth
 
 
 The Server Code:
-<!--lang-c
+```C
 #include <stdio.h> 
 #include <fcntl.h>
 #include <errno.h>
@@ -288,7 +288,7 @@ int main(int argc, char * argv[])
 }
 
 /* --------------------End of the main function ----------------------------------------*/
--->
+```
 
 
 The User Process:
@@ -303,7 +303,7 @@ Print error if the user is invalid.
 4. <any-other-text> : Same as in the SERVER process but without a prefix. Broadcast this text to all user processes."
 
 The User Code:
-<!--lang-c
+```C
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -332,5 +332,4 @@ void main(int argc, char * argv[]) {
 }
 
 /*--------------------------End of main for the client --------------------------*/
-
--->
+```
