@@ -7,7 +7,7 @@ exceprt: "Multi-Threaded Web Server implemented in C, using threading techniques
 
 Multi-Threaded web server using POSIX threads (pthreads) in C to learn about thread programming and synchronization methods. Web server is able to handle any file type: HTML, GIF, JPEG, TXT, etc. and of any arbitrary size. Handles a limited portion of the HTTP web protocol (namely, the GET command to fetch a web page / files). 
 
-Server will be composed of two types of threads: dispatcher threads and worker threads. The purpose of the dispatcher threads is to repeatedly accept an incoming connection, read the client request from the connection, and place the request in a queue. We will assume that there will only be one request per incoming connection. The purpose of the worker threads is to monitor the request queue, retrieve requests and serve the request’s result back to the client. The request queue is a bounded buffer and will need to be properly synchronized (using CVs).
+Server is composed of two types of threads: dispatcher threads and worker threads. The purpose of the dispatcher threads is to repeatedly accept an incoming connection, read the client request from the connection, and place the request in a queue. We will assume that there will only be one request per incoming connection. The purpose of the worker threads is to monitor the request queue, retrieve requests and serve the request’s result back to the client. The request queue is a bounded buffer and will need to be properly synchronized (using CVs).
 
 <h2> Thread Pool </h2>
 Server creates a static/fixed pool of dispatcher and worker threads when the server starts. The dispatcher thread pool size should be num_dispatch and the worker thread pool size should be num_workers.
